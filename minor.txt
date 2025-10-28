@@ -1,9 +1,51 @@
-# 1. Erstellen Sie ein Verzeichnis im /work-Laufwerk (falls es noch nicht existiert)
-mkdir -p /work/jlusifo/pw-browsers
-
-# 2. Setzen Sie die Umgebungsvariable und installieren Sie playwright
-PLAYWRIGHT_BROWSERS_PATH=/work/jlusifo/pw-browsers pip install playwright
-
-# 3. (Optional) Installieren Sie die restlichen requirements, falls noch nicht geschehen
-# (Playwright wurde bereits im vorherigen Schritt installiert)
-pip install -r requirements.txt
+(venv) clab19:~/privat$ cd Simple-Watcher/
+(venv) clab19:~/privat/Simple-Watcher$ nano minor.txt 
+(venv) clab19:~/privat/Simple-Watcher$ playwright install
+Removing unused browser at /home/jlusifo/.cache/ms-playwright/chromium-1187
+Downloading Chromium 140.0.7339.16 (playwright build v1187) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1187/chromium-linux.zip
+173.7 MiB [====================] 100% 0.0s
+[Error: Unknown system error -122: Unknown system error -122, close] {
+  errno: -122,
+  code: 'Unknown system error -122',
+  syscall: 'close'
+}
+(node:11995) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Downloading Chromium 140.0.7339.16 (playwright build v1187) from https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/chromium/1187/chromium-linux.zip
+173.7 MiB [====================] 100% 0.0s
+[Error: Unknown system error -122: Unknown system error -122, close] {
+  errno: -122,
+  code: 'Unknown system error -122',
+  syscall: 'close'
+}
+Downloading Chromium 140.0.7339.16 (playwright build v1187) from https://cdn.playwright.dev/builds/chromium/1187/chromium-linux.zip
+173.7 MiB [====================] 100% 0.0s
+[Error: Unknown system error -122: Unknown system error -122, close] {
+  errno: -122,
+  code: 'Unknown system error -122',
+  syscall: 'close'
+}
+Downloading Chromium 140.0.7339.16 (playwright build v1187) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1187/chromium-linux.zip
+173.7 MiB [====================] 100% 0.0s
+[Error: Unknown system error -122: Unknown system error -122, close] {
+  errno: -122,
+  code: 'Unknown system error -122',
+  syscall: 'close'
+}
+Downloading Chromium 140.0.7339.16 (playwright build v1187) from https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/chromium/1187/chromium-linux.zip
+173.7 MiB [====================] 100% 0.0s
+[Error: Unknown system error -122: Unknown system error -122, close] {
+  errno: -122,
+  code: 'Unknown system error -122',
+  syscall: 'close'
+}
+Failed to install browsers
+Error: Failed to download Chromium 140.0.7339.16 (playwright build v1187), caused by
+Error: Download failure, code=1
+    at ChildProcess.<anonymous> (/home/jlusifo/privat/Simple-Watcher/venv/lib/python3.12/site-packages/playwright/driver/package/lib/server/registry/browserFetcher.js:94:32)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+(venv) clab19:~/privat/Simple-Watcher$ ls /work/jlusifo/
+pw-browsers
+(venv) clab19:~/privat/Simple-Watcher$ ls /work/jlusifo/pw-browsers/
+(venv) clab19:~/privat/Simple-Watcher$ 
