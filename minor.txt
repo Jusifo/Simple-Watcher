@@ -1,0 +1,46 @@
+clab19:~/privat/Simple-Watcher/venv/bin$ df -h
+Filesystem                                     Size  Used Avail Use% Mounted on
+tmpfs                                          6.2G  2.5M  6.2G   1% /run
+efivarfs                                       128K   62K   62K  51% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv               98G   76G   18G  81% /
+tmpfs                                           31G   57M   31G   1% /dev/shm
+tmpfs                                          5.0M   16K  5.0M   1% /run/lock
+/dev/mapper/ubuntu--vg-work                    1.7T  264G  1.4T  17% /work
+/dev/nvme0n1p2                                 2.0G  209M  1.6G  12% /boot
+/dev/nvme0n1p1                                 1.1G  6.2M  1.1G   1% /boot/efi
+home.stud.ntnu.no:/svm_shome_shomec/j/jlusifo  5.1T  3.1T  2.0T  61% /home/jlusifo
+tmpfs                                          6.2G  180K  6.2G   1% /run/user/1401906
+clab19:~/privat/Simple-Watcher/venv/bin$ pip install -r ../../requirements.txt 
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.org/simple, https://pypi.idi.ntnu.no
+Requirement already satisfied: beautifulsoup4==4.14.2 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 1)) (4.14.2)
+Requirement already satisfied: certifi==2025.10.5 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 2)) (2025.10.5)
+Requirement already satisfied: charset-normalizer==3.4.3 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 3)) (3.4.3)
+Requirement already satisfied: greenlet==3.2.4 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 4)) (3.2.4)
+Requirement already satisfied: idna==3.10 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 5)) (3.10)
+Collecting playwright==1.55.0 (from -r ../../requirements.txt (line 6))
+  Using cached playwright-1.55.0-py3-none-manylinux1_x86_64.whl.metadata (3.5 kB)
+Requirement already satisfied: pyee==13.0.0 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 7)) (13.0.0)
+Requirement already satisfied: requests==2.32.5 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 8)) (2.32.5)
+Requirement already satisfied: soupsieve==2.8 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 9)) (2.8)
+Requirement already satisfied: typing_extensions==4.15.0 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 10)) (4.15.0)
+Requirement already satisfied: urllib3==2.5.0 in /home/jlusifo/.local/lib/python3.12/site-packages (from -r ../../requirements.txt (line 11)) (2.5.0)
+Using cached playwright-1.55.0-py3-none-manylinux1_x86_64.whl (45.9 MB)
+Installing collected packages: playwright
+ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exceeded
+
+clab19:~/privat/Simple-Watcher/venv/bin$ df -h
+Filesystem                                     Size  Used Avail Use% Mounted on
+tmpfs                                          6.2G  2.5M  6.2G   1% /run
+efivarfs                                       128K   62K   62K  51% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv               98G   76G   18G  81% /
+tmpfs                                           31G   57M   31G   1% /dev/shm
+tmpfs                                          5.0M   16K  5.0M   1% /run/lock
+/dev/mapper/ubuntu--vg-work                    1.7T  264G  1.4T  17% /work
+/dev/nvme0n1p2                                 2.0G  209M  1.6G  12% /boot
+/dev/nvme0n1p1                                 1.1G  6.2M  1.1G   1% /boot/efi
+home.stud.ntnu.no:/svm_shome_shomec/j/jlusifo  5.1T  3.1T  2.0T  61% /home/jlusifo
+tmpfs                                          6.2G  180K  6.2G   1% /run/user/1401906
+clab19:~/privat/Simple-Watcher/venv/bin$ 
+
+
