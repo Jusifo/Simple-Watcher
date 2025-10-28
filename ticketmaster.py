@@ -27,7 +27,7 @@ def get_trondheim_count(url: str) -> int | None:
         #page.wait_for_selector("input[id='Trondheim']", timeout=10_000)
 
         soup = BeautifulSoup(page.content(), "html.parser")
-        print(soup.text)
+        #print(soup.text)
 
         browser.close()
 
@@ -40,7 +40,7 @@ def main() -> None:
     while True:
         tickets_avaliable = get_trondheim_count(url)
 
-        ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+        ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(f"{ts}: Check conducted")
         #requests.post("https://ntfy.sh/trondheim-alert", data= f"⚠️ Trondheim: {amount} Zimmer frei!")
         if tickets_avaliable == 1:
